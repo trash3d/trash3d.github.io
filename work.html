@@ -1,0 +1,51 @@
+<html>
+<head>
+<style>
+@media (max-width: 600px) {
+  div {height:35%;}
+  }
+
+.flex {
+	display:flex;
+	flex-wrap:wrap;
+	width:100%;
+}
+div {
+	height:65%;
+	width:33%;
+	text-align:center;
+	}
+body{cursor:url(cursor.gif),pointer;}
+</style>
+<script>
+function bigImg(img){
+		img.src=img.name+".gif";
+		if(img.name=="work/masa"){img.style.height="120%";img.style.width="auto";}
+		if(img.name=="work/boa"){img.style.height="65%";img.style.width="auto";img.style.margin="-20%";}
+	}
+function normalImg(img){
+		img.src=img.name+".png";
+		img.style.height="auto";
+		img.style.width="100%";
+	}
+</script>
+</head>
+<body>
+<div class="flex">
+<div><a href="illustration.html" target="principal"><img name="work/illustration" src="work/illustration.png" style="width:100%;" onmouseover="bigImg(this)" onmouseout="normalImg(this)"></a></div>
+<div><a href="masa.html"><img name="work/masa" src="work/masa.png" style="width:100%;" onmouseover="bigImg(this)" onmouseout="normalImg(this)"></a></div>
+<div><a href="kitkat.html"><img name="work/kitkat" src="work/kitkat.png"  style="width:100%;" onmouseover="bigImg(this)" onmouseout="normalImg(this)"></a></div>
+<div><a href="chocolate.html"><img name="work/chocolate" src="work/chocolate.png" style="width:100%;" onmouseover="bigImg(this)" onmouseout="normalImg(this)"></a></div>
+<div><a href="revolver.html"><img name="work/ropa" src="work/ropa.png" style="width:100%;" onmouseover="bigImg(this)" onmouseout="normalImg(this)"></a></div>
+<div><a href="rockon.html"><img name="work/rockon" src="work/rockon.png" style="width:100%;" onmouseover="bigImg(this)" onmouseout="normalImg(this)"></a></div>
+<div><a href="news.html"><img name="work/news" src="work/news.png" style="width:100%;" onmouseover="bigImg(this)" onmouseout="normalImg(this)"></a></div>
+<div><img name="work/dr" src="work/dr.png" style="width:100%;" onmouseover="bigImg(this)" onmouseout="normalImg(this)"></div>
+<div><a href="boa.html"><img name="work/boa" src="work/boa.png" style="width:100%;" onmouseover="bigImg(this)" onmouseout="normalImg(this)"></a></div>
+<div><a href="walls.html"><img name="work/walls" src="work/walls.png" style="width:100%;" onmouseover="bigImg(this)" onmouseout="normalImg(this)"></a></div>
+<div><a href="converse.html"><img name="work/converse" src="work/converse.png" style="width:100%;" onmouseover="bigImg(this)" onmouseout="normalImg(this)"></a></div>
+<div><a href="industria.html"><img name="work/industria" src="work/industria.png" style="width:100%;" onmouseover="bigImg(this)" onmouseout="normalImg(this)"></a></div>
+<div><a href="paintings.html"><img name="work/paintings" src="work/paintings.png" style="width:100%;" onmouseover="bigImg(this)" onmouseout="normalImg(this)"></a></div>
+<div><img name="work/rugs" src="work/rugs.png" style="width:100%;" onmouseover="bigImg(this)" onmouseout="normalImg(this)"></div>
+</div>
+</body>
+</html>
