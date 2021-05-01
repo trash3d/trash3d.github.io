@@ -1,24 +1,34 @@
 <html>
 <head>
+<script>
+
+function mostrar(nombre){
+	console.log("name" + nombre.src);
+	document.write('<a href="masa.html" target="principal"><div style="width:100%;text-align:right;"><img src="x.png"></div></a><img src="'+ nombre.src +'" style="width:100%;">');
+}
+
+</script>
 </head>
 <body>
+<a href="work.html" target="principal" style="position:absolute;right:1px;z-index:1;"><img src="x.png"></a>
 <div style="text-align:center;"><img src="work/masa.png" style="width:40%;margin-top:-15%;margin-left:-10%;"></div>
 <div style="text-align:center;"><img src="masa/masatext.png" style="width:60%;margin-top:5%;"></div>
 
 <div style="margin-top:10%;">
 
-<div style="display:flex;">
-	<a href="masa/FInalPelea.jpg"><img src="masa/FInalPelea.jpg" style="width:100%;"></a>
-	<a href="masa/mason.jpg"><img src="masa/mason.jpg" style="width:100%;"></a>
-</div>
-<div style="display:flex;">
-	<a href="masa/masamasa.jpg"><img src="masa/masamasa.jpg" style="width:100%;"></a>
-	<a href="masa/PErso.jpg"><img src="masa/PErso.jpg" style="width:100%;"></a>
-</div>
-<div style="display:flex;">
-	<a href="masa/taco.jpg"><img src="masa/taco.jpg" style="width:100%;"></a>
-	<a href="masa/finalspicy.jpg"><img src="masa/finalspicy.jpg" style="width:100%;"></a>
-</div>
+	<div style="display:flex;">
+		<div style="width:50%;">
+			<img src="masa/FInalPelea.jpg" onclick="mostrar(this)" style="width:100%;">
+			<img src="masa/masamasa.jpg" onclick="mostrar(this)" style="width:100%;">
+			<img src="masa/taco.jpg" onclick="mostrar(this)" style="width:100%;">
+		</div>
+		<div style="width:50%;">
+			<img src="masa/mason.jpg" onclick="mostrar(this)" style="width:100%;">
+			<img src="masa/PErso.jpg" onclick="mostrar(this)" style="width:100%;">
+			<img src="masa/finalspicy.jpg" onclick="mostrar(this)" style="width:100%;">
+		</div>
+	</div>
+
 </div>
 </body>
 </html>

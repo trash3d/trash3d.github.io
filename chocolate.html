@@ -1,18 +1,28 @@
 <html>
 <head>
+<script>
+
+function mostrar(nombre){
+	console.log("name" + nombre.src);
+	document.write('<a href="chocolate.html" target="principal"><div style="width:100%;text-align:right;"><img src="x.png"></div></a><img src="'+ nombre.src +'" style="width:100%;">');
+}
+
+</script>
 </head>
 <body>
-<div style="text-align:center;"><img src="work/chocolate.png" style="width:40%;margin-left:-20%;"></div>
+<a href="work.html" target="principal" style="position:absolute;right:1px;z-index:1;"><img src="x.png"></a>
+<div style="text-align:center;"><img src="work/chocolate.png" style="width:40%;margin-top:-10%;margin-bottom:5%;"></div>
 
 <div style="margin-top:-15%;">
-
 <div style="display:flex;">
-	<a href="chocolate/biscuits-enrobes-de-chocolat-noir-et-laitmax.jpg"><img src="chocolate/biscuits-enrobes-de-chocolat-noir-et-laitmax.jpg" style="width:100%;"></a>
-	<a href="chocolate/chien biker.jpg"><img src="chocolate/chien bikermini.jpg" style="width:100%;"></a>
-</div>
-<div style="display:flex;">
-	<a href="chocolate/louis 14.jpg"><img src="chocolate/louis 14.jpg" style="width:100%;"></a>
-	<a href="chocolate/choco2020.jpg"><img src="chocolate/choco2020.jpg" style="width:100%;"></a>
+	<div style="width:50%;">
+		<img src="chocolate/biscuits-enrobes-de-chocolat-noir-et-laitmax.jpg" onclick="mostrar(this)" style="width:100%;">
+		<img src="chocolate/louis 14.jpg" onclick="mostrar(this)" style="width:100%;">
+	</div>
+	<div style="width:50%;">
+		<img src="chocolate/chien bikermini.jpg" onclick="mostrar(this)" style="width:100%;">
+		<img src="chocolate/choco2020.jpg" onclick="mostrar(this)" style="width:100%;">
+	</div>
 </div>
 </div>
 </body>
