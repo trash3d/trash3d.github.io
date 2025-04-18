@@ -24,7 +24,7 @@ function draw() {
 	//directionalLight(255, 5, 100, 0, 1, -1);
 	//ambientLight(255,0,155);
 	background(0,0,0);
-	//push();
+	push();
 	angleMode(RADIANS);
 	rotateY(frameCount * 0.02);
 	rotateZ(frameCount * 0.02);
@@ -47,7 +47,7 @@ function draw() {
 		  pop();
 		}
 	  }
-	 // pop(); 
+	 pop(); 
 	//image(fuente,-width/2,-height/2,900);
 	//distort();
     //sphere(50);
